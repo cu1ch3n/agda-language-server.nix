@@ -4,12 +4,10 @@
   inputs = {
     haskellNix.url = "github:input-output-hk/haskell.nix";
     haskellNix.inputs.nixpkgs-unstable.follows = "nixpkgs";
-    # nixpkgs.follows = "haskellNix/nixpkgs-unstable";
-    nixpkgs.url = "github:NixOs/nixpkgs/23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     agda-language-server = {
       url = "github:agda/agda-language-server";
-      # url = "github:zmrocze/agda-language-server?ref=c2ae939";
       flake = false;
     };
   };
